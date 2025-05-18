@@ -8,8 +8,8 @@
     body {
       margin: 0;
       font-family: 'Arial Black', Arial, sans-serif;
-      background: #000000; /* preto */
-      color: #7b4fc1; /* roxo metálico claro */
+      background: #ffffff; /* branco */
+      color: #1a237e; /* azul escuro */
       overflow-x: hidden;
       padding: 0;
     }
@@ -21,7 +21,7 @@
       justify-content: center;
       gap: 30px;
       padding: 40px;
-      background: #000;
+      background: #f5f5f5; /* cinza claro */
     }
 
     .topo-imagem {
@@ -35,11 +35,11 @@
 
     .topo-imagem:hover {
       transform: scale(1.15) rotate(5deg);
-      box-shadow: 0 0 15px #800040cc;
+      box-shadow: 0 0 15px #ffca28cc; /* dourado suave */
     }
 
     .topo-texto {
-      color: #fff;
+      color: #1a237e; /* azul escuro */
       text-align: center;
     }
 
@@ -86,8 +86,8 @@
       font-size: 2.4em;
       font-weight: 900;
       margin-bottom: 20px;
-      color: #6e3ecf; /* roxo metálico mais claro */
-      text-shadow: 0 0 12px #000000cc; /* sombra preta forte */
+      color: #ff9800; /* laranja/dourado vibrante */
+      text-shadow: 0 0 12px #ccc; /* sombra suave cinza */
     }
 
     .modules-carousel {
@@ -96,30 +96,30 @@
       scroll-behavior: smooth;
       gap: 20px;
       padding-bottom: 15px;
-      scrollbar-width: none; /* Firefox */
-      -ms-overflow-style: none;  /* IE 10+ */
+      scrollbar-width: none;
+      -ms-overflow-style: none;
     }
 
     .modules-carousel::-webkit-scrollbar {
-      display: none; /* Chrome, Safari */
+      display: none;
     }
 
     .module-card {
       flex: 0 0 auto;
       width: 250px;
       border-radius: 14px;
-      box-shadow: 0 0 15px #000000cc; /* sombra preta */
-      background: #111111;
-      color: #7b4fc1; /* roxo metálico claro */
+      box-shadow: 0 0 15px #ccc; /* sombra cinza */
+      background: #fafafa; /* quase branco */
+      color: #1a237e; /* azul escuro */
       user-select: none;
       transition: transform 0.3s ease;
       cursor: pointer;
-      border: 2px solid #000000; /* borda preta */
+      border: 2px solid #e0e0e0; /* cinza claro */
     }
 
     .module-card:hover {
       transform: scale(1.12);
-      box-shadow: 0 0 30px #000000cc; /* sombra preta maior */
+      box-shadow: 0 0 30px #bbb; /* sombra cinza mais forte */
     }
 
     .module-card img {
@@ -129,7 +129,7 @@
       display: block;
       height: 160px;
       object-fit: cover;
-      filter: drop-shadow(0 0 4px #7b4fc1bb);
+      filter: drop-shadow(0 0 4px #ffca28bb); /* dourado */
     }
 
     .module-caption {
@@ -137,8 +137,8 @@
       font-weight: 900;
       font-size: 1.2em;
       text-align: center;
-      color: #6e3ecf; /* roxo metálico claro */
-      text-shadow: 0 0 8px #000000cc;
+      color: #ff9800; /* laranja/dourado */
+      text-shadow: 0 0 8px #ccc;
       user-select: none;
     }
   </style>
