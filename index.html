@@ -669,7 +669,7 @@
 </style>
 
 
-----------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------- DEPOIMENTOS
 <section class="depoimentos-auto">
   <h2>O que estão dizendo sobre o MTI</h2>
   <div class="depoimentos-slider">
@@ -730,18 +730,20 @@
   .depoimentos-auto {
     background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
                 url('assets/mti-fundo.jpg') no-repeat center center/cover;
-    color: #fff;
+    color: #f8d7da; /* vermelho claro para texto geral */
     padding: 60px 20px;
     text-align: center;
     overflow: hidden;
     box-shadow:
-      inset 0 0 60px #8000ff55,
-      inset 0 0 120px #8000ff33;
+      inset 0 0 60px #b2222255, /* sombra interna vermelha mais suave */
+      inset 0 0 120px #8b000033; /* vermelho escuro mais transparente */
   }
 
   .depoimentos-auto h2 {
     font-size: 2.8rem;
     margin-bottom: 40px;
+    color: #dc143c; /* vermelho vivo para título */
+    text-shadow: 0 0 15px #8b0000cc; /* sombra vermelha escura */
   }
 
   .depoimentos-slider {
@@ -758,10 +760,10 @@
 
   .depoimento {
     flex: 0 0 280px;
-    background: #1e1e1e;
+    background: #330000; /* fundo vermelho bem escuro */
     border-radius: 14px;
     padding: 20px;
-    box-shadow: 0 0 10px #800040aa;
+    box-shadow: 0 0 10px #b22222aa; /* sombra vermelho fogo */
     text-align: center;
   }
 
@@ -771,17 +773,19 @@
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 12px;
+    border: 2px solid #dc143c; /* borda vermelha no avatar */
   }
 
   .depoimento h3 {
     font-size: 1.2rem;
-    color: #ff80b3;
+    color: #ff4d6d; /* vermelho rosado mais suave */
     margin-bottom: 8px;
   }
 
   .depoimento p {
     font-size: 1rem;
     line-height: 1.4;
+    color: #f8d7da; /* vermelho claro para o texto */
   }
 
   @keyframes scroll-left {
@@ -803,6 +807,8 @@
     }
   }
 </style>
+
+      --------------------------------------------------------------------*********-------------------------------------------------------------- *********
 <section class="sessao-preco">
   <h2>Você está a uma decisão de transformar sua jornada no mercado!</h2>
   <p class="preco">
