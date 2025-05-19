@@ -826,68 +826,67 @@
 
 <style>
   .sessao-preco {
-    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)),
+    background: linear-gradient(rgba(40, 0, 0, 0.9), rgba(40, 40, 40, 0.9)),
                 url('assets/mti-fundo.jpg') no-repeat center center/cover;
     text-align: center;
     padding: 70px 20px;
-    color: #ccc; /* cinza claro para texto */
+    color: #fff;
     box-shadow:
-      inset 0 0 80px #8b0000cc, /* vermelho escuro */
-      inset 0 0 160px #8b000055;
+      inset 0 0 80px #88000088,
+      inset 0 0 160px #44444444;
   }
 
   .sessao-preco h2 {
-    font-size: 2.2rem;
+    font-size: 3rem !important;
     font-weight: 700;
     margin-bottom: 25px;
     max-width: 800px;
     margin-inline: auto;
-    color: #ff3333; /* vermelho vibrante no título */
-    text-shadow: 0 0 6px #7a0000cc;
+    color: #fff !important;
+    text-shadow: 0 0 10px #000000cc;
   }
 
   .preco {
     font-size: 1.6rem;
     margin-bottom: 30px;
+    color: #ccc;
   }
 
   .preco-riscado {
     text-decoration: line-through;
-    color: #666; /* cinza médio */
+    color: #888;
     margin-right: 10px;
   }
 
   .preco-atual {
-    color: #ffcc33; /* dourado */
+    color: #d4af37; /* dourado */
     font-weight: bold;
     font-size: 1.8rem;
-    text-shadow: 0 0 4px #a67c00cc;
   }
 
   .botao-preco {
-    background: linear-gradient(135deg, #d4af37, #b8860b); /* dourado */
-    color: #000; /* texto preto */
+    background: linear-gradient(135deg, #b8860b, #ffd700);
+    color: #000;
     font-size: 1.3rem;
     font-weight: bold;
     padding: 15px 35px;
     border-radius: 10px;
     text-decoration: none;
     animation: pulsar 1.5s infinite;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
     display: inline-block;
-    box-shadow: 0 0 15px #d4af37aa;
+    box-shadow: 0 0 15px #b8860b;
   }
 
   .botao-preco:hover {
     transform: scale(1.08);
-    background: linear-gradient(135deg, #b8860b, #8b6b00);
-    box-shadow: 0 0 25px #d4af37ff;
+    box-shadow: 0 0 25px #ffd700;
   }
 
   @keyframes pulsar {
-    0% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7); }
-    70% { box-shadow: 0 0 0 10px rgba(212, 175, 55, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); }
+    0% { box-shadow: 0 0 0 0 rgba(184, 134, 11, 0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(184, 134, 11, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(184, 134, 11, 0); }
   }
 </style>
 
@@ -911,18 +910,17 @@
     padding: 60px 30px;
     gap: 40px;
     flex-wrap: wrap;
-    background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
+    background: linear-gradient(rgba(20, 0, 0, 0.9), rgba(30, 30, 30, 0.9)),
                 url('assets/mti-fundo.jpg') no-repeat center center/cover;
-    color: #ccc; /* cinza claro */
+    color: #ccc;
     box-shadow:
-      inset 0 0 60px #8b000055, /* vermelho escuro */
-      inset 0 0 120px #8b000033;
+      inset 0 0 60px #88000055,
+      inset 0 0 120px #44444433;
   }
 
   .garantia-imagem {
     width: 180px;
     animation: pulse 2s infinite;
-    filter: drop-shadow(0 0 8px #d4af37);
   }
 
   .garantia-texto {
@@ -931,15 +929,16 @@
   }
 
   .garantia-texto h2 {
-    font-size: 2.5rem;
+    font-size: 3rem !important;
     margin-bottom: 20px;
-    color: #ff3333; /* vermelho vibrante */
-    text-shadow: 0 0 6px #7a0000cc;
+    color: #fff !important;
+    text-shadow: 0 0 10px #000000cc;
   }
 
   .garantia-texto p {
     font-size: 1.2rem;
     line-height: 1.6;
+    color: #ccc;
   }
 
   @keyframes pulse {
@@ -958,7 +957,7 @@
     }
 
     .garantia-texto h2 {
-      font-size: 2rem;
+      font-size: 2.5rem !important;
     }
 
     .garantia-texto p {
@@ -986,30 +985,30 @@
   }
 
   .cta-texto {
-    color: #ff3333; /* vermelho vibrante */
-    font-size: 2rem;
+    color: #fff !important;
+    font-size: 3rem !important;
     font-weight: 600;
     margin-bottom: 30px;
-    text-shadow: 0 0 8px #7a0000cc;
+    text-shadow: 0 0 10px #000000cc;
   }
 
   .botao-acesso {
     padding: 25px 60px;
     font-size: 2.5rem;
     font-weight: bold;
-    background: linear-gradient(135deg, #d4af37, #b8860b); /* dourado */
+    background: linear-gradient(135deg, #b8860b, #ffd700);
     color: #000;
     border-radius: 16px;
     text-decoration: none;
     display: inline-block;
-    box-shadow: 0 0 25px #d4af37cc;
+    box-shadow: 0 0 25px #b8860b;
     animation: saltar 1.2s infinite;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
   .botao-acesso:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 35px #ffd54f;
+    box-shadow: 0 0 35px #ffd700;
   }
 
   @keyframes saltar {
@@ -1020,7 +1019,7 @@
 
   @media (max-width: 700px) {
     .cta-texto {
-      font-size: 1.5rem;
+      font-size: 2.2rem !important;
       margin-bottom: 20px;
     }
 
@@ -1030,6 +1029,7 @@
     }
   }
 </style>
+
 
 ----------------------------talvez >>HUASHUASUHAS
 <section class="faq-transparente">
