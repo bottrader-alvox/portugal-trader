@@ -1102,13 +1102,14 @@
   }
 
   .faq-transparente h2 {
-    font-size: 3rem;
+    font-size: 3.8rem; /* maior título */
     margin-bottom: 15px;
+    color: #fff; /* branco */
   }
 
   .faq-sub {
-    font-size: 1.2rem;
-    color: #ccc;
+    font-size: 1.4rem;
+    color: #aaa; /* cinza claro */
     margin-bottom: 40px;
   }
 
@@ -1123,8 +1124,8 @@
   .faq-pergunta {
     width: 100%;
     background: transparent;
-    color: #fff;
-    font-size: 1.3rem;
+    color: #f44336; /* vermelho */
+    font-size: 1.6rem;
     padding: 15px 0;
     text-align: left;
     border: none;
@@ -1138,7 +1139,7 @@
   }
 
   .faq-pergunta:hover {
-    color: #a566ff;
+    color: #ffa726; /* tom laranja claro para hover */
   }
 
   .faq-resposta {
@@ -1151,8 +1152,8 @@
 
   .faq-resposta p {
     margin: 10px 0;
-    font-size: 1.1rem;
-    color: #ccc;
+    font-size: 1.2rem;
+    color: #ccc; /* cinza claro */
     text-align: left;
   }
 
@@ -1164,21 +1165,27 @@
     transform: rotate(180deg);
   }
 
+  .seta {
+    font-size: 1.6rem;
+    color: #f44336; /* vermelho */
+    transition: transform 0.3s ease;
+  }
+
   @media (max-width: 600px) {
     .faq-transparente h2 {
-      font-size: 2.2rem;
+      font-size: 2.8rem;
     }
 
     .faq-sub {
-      font-size: 1rem;
-    }
-
-    .faq-pergunta {
       font-size: 1.1rem;
     }
 
+    .faq-pergunta {
+      font-size: 1.3rem;
+    }
+
     .faq-resposta p {
-      font-size: 1rem;
+      font-size: 1.1rem;
     }
   }
 </style>
@@ -1204,38 +1211,13 @@
   });
 </script>
 
-
-<script>
-  const faqItems = document.querySelectorAll('.faq-item');
-
-  faqItems.forEach(item => {
-    const pergunta = item.querySelector('.faq-pergunta');
-    const seta = item.querySelector('.seta');
-
-    pergunta.addEventListener('click', () => {
-      const isActive = item.classList.contains('active');
-      faqItems.forEach(el => {
-        el.classList.remove('active');
-        el.querySelector('.seta').textContent = '↓';
-      });
-      if (!isActive) {
-        item.classList.add('active');
-        seta.textContent = '↑';
-      }
-    });
-  });
-</script>
 <section class="compra-final">
   <h2>Pronto para mudar sua forma de operar?</h2>
   <p>Garanta seu acesso agora ao <strong>Método Trader Inteligente</strong> e entre para o time dos vencedores!</p>
-  <a href="https://pay.hotmart.com/S98634850D?off=zepj63xj&checkoutMode=10" class="botao-compra-final" target="_blank">
+  <a href="https://go.hotmart.com/F99820396Y?dp=1" class="botao-compra-final" target="_blank" rel="noopener noreferrer">
     QUERO COMEÇAR AGORA
   </a>
 </section>
-
-<footer class="rodape">
-  <p>&copy; 2025 Thurzin Trader. Todos os direitos reservados.</p>
-</footer>
 
 <style>
   .compra-final {
@@ -1246,40 +1228,35 @@
   }
 
   .compra-final h2 {
-    font-size: 2.4rem;
+    font-size: 3rem; /* título maior branco */
     color: #fff;
     margin-bottom: 20px;
   }
 
   .compra-final p {
-    font-size: 1.3rem;
-    font-weight: 500;
+    font-size: 1.5rem;
+    font-weight: 600;
     margin-bottom: 30px;
-    color: #fff;
+    color: #ccc;
   }
 
   .botao-compra-final {
-    background: linear-gradient(135deg, #6a00ff, #1a001f);
-    color: #fff;
-    font-size: 1.4rem;
+    background: linear-gradient(45deg, #d4af37, #b8860b); /* dourado */
+    color: #000;
+    font-size: 1.5rem;
     font-weight: bold;
-    padding: 15px 35px;
-    border-radius: 10px;
+    padding: 18px 45px;
+    border-radius: 12px;
     text-decoration: none;
-    animation: pulsar 1.5s infinite;
-    transition: transform 0.2s ease;
+    box-shadow: 0 0 10px #d4af37aa;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
     display: inline-block;
   }
 
   .botao-compra-final:hover {
-    transform: scale(1.08);
-    background: linear-gradient(135deg, #7c1fff, #22002a);
-  }
-
-  @keyframes pulsar {
-    0% { box-shadow: 0 0 0 0 rgba(106, 0, 255, 0.7); }
-    70% { box-shadow: 0 0 0 10px rgba(106, 0, 255, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(106, 0, 255, 0); }
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #d4af37ff;
+    background: linear-gradient(45deg, #ffd700, #daa520);
   }
 
   .rodape {
@@ -1290,4 +1267,9 @@
     font-size: 0.95rem;
   }
 </style>
+
+<footer class="rodape">
+  <p>&copy; 2025 Portugal Trader. Todos os direitos reservados.</p>
+</footer>
+
 
