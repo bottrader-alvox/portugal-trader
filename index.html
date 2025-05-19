@@ -31,16 +31,14 @@
       position: relative;
     }
 
-    /* Overlay escurecido sobre a imagem */
     .image-side::before {
       content: '';
       position: absolute;
       inset: 0;
-      background-color: rgba(0, 0, 0, 0.4); /* ajuste a opacidade aqui */
+      background-color: rgba(0, 0, 0, 0.4);
       z-index: 1;
     }
 
-    /* Sombra suave na transição do lado direito da foto */
     .image-side::after {
       content: '';
       position: absolute;
@@ -65,11 +63,10 @@
       overflow: hidden;
     }
 
-    /* Céu mais escuro com toque roxo profundo */
     .star-background {
       position: absolute;
       inset: 0;
-      background: radial-gradient(ellipse at bottom, #000000 0%, #0a0010 100%);
+      background: radial-gradient(ellipse at bottom, #000000 0%, #1a0000 100%);
       z-index: 0;
     }
 
@@ -77,7 +74,7 @@
       position: absolute;
       width: 2px;
       height: 2px;
-      background: #b472f1;
+      background: #ff4d4d;
       border-radius: 50%;
       opacity: 0.6;
       animation: twinkle 2s infinite ease-in-out alternate;
@@ -107,7 +104,7 @@
     .content-text h1 {
       font-size: 3.5rem;
       color: #ffffff;
-      text-shadow: 0 0 10px #8000ff;
+      text-shadow: 0 0 10px #ff1a1a;
       margin-bottom: 20px;
     }
 
@@ -120,7 +117,7 @@
 
     .botao {
       background: gold;
-      color: #1a002d;
+      color: #1a0000;
       padding: 15px 30px;
       font-size: 1.2rem;
       border-radius: 8px;
@@ -195,6 +192,7 @@
 </html>
 
 
+------------------------------------------------------------------------------------------------------
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
