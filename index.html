@@ -706,7 +706,7 @@
         <p>"O MTI é direto ao ponto. Já estou operando com segurança e confiança."</p>
       </div>
 
-      <!-- Copiando os mesmos para repetir a rolagem sem travar -->
+      <!-- Repetidos para rolagem contínua -->
       <div class="depoimento">
         <img src="assets/depo1.jpg" alt="João Silva" />
         <h3>João Silva</h3>
@@ -728,22 +728,22 @@
 
 <style>
   .depoimentos-auto {
-    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+    background: linear-gradient(rgba(30, 30, 30, 0.9), rgba(50, 50, 50, 0.9)),
                 url('assets/mti-fundo.jpg') no-repeat center center/cover;
-    color: #f8d7da; /* vermelho claro para texto geral */
+    color: #fff;
     padding: 60px 20px;
     text-align: center;
     overflow: hidden;
     box-shadow:
-      inset 0 0 60px #b2222255, /* sombra interna vermelha mais suave */
-      inset 0 0 120px #8b000033; /* vermelho escuro mais transparente */
+      inset 0 0 60px #800000aa,  /* vermelho escuro */
+      inset 0 0 120px #55000077; /* vermelho mais suave */
   }
 
   .depoimentos-auto h2 {
     font-size: 2.8rem;
     margin-bottom: 40px;
-    color: #dc143c; /* vermelho vivo para título */
-    text-shadow: 0 0 15px #8b0000cc; /* sombra vermelha escura */
+    color: #fff;  /* título em branco */
+    text-shadow: 0 0 15px #800000cc;
   }
 
   .depoimentos-slider {
@@ -760,10 +760,10 @@
 
   .depoimento {
     flex: 0 0 280px;
-    background: #330000; /* fundo vermelho bem escuro */
+    background: #555555; /* cinza médio */
     border-radius: 14px;
     padding: 20px;
-    box-shadow: 0 0 10px #b22222aa; /* sombra vermelho fogo */
+    box-shadow: 0 0 12px #440000bb; /* sombra com vermelho escuro */
     text-align: center;
   }
 
@@ -773,19 +773,20 @@
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 12px;
-    border: 2px solid #dc143c; /* borda vermelha no avatar */
+    border: 3px solid #bb0000; /* borda vermelho forte */
   }
 
   .depoimento h3 {
     font-size: 1.2rem;
-    color: #ff4d6d; /* vermelho rosado mais suave */
+    color: #ff4444; /* vermelho claro para nomes */
     margin-bottom: 8px;
+    text-shadow: 0 0 6px #990000cc;
   }
 
   .depoimento p {
     font-size: 1rem;
     line-height: 1.4;
-    color: #f8d7da; /* vermelho claro para o texto */
+    color: #fff; /* texto branco */
   }
 
   @keyframes scroll-left {
@@ -807,6 +808,7 @@
     }
   }
 </style>
+
 
       --------------------------------------------------------------------*********-------------------------------------------------------------- *********
 <section class="sessao-preco">
